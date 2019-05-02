@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
+                git credentialsId: '7197d4b4-c813-448d-a674-aef48784d8f0', url: 'https://github.com/kraiem12/projet_jenkins.git'
                 echo 'checkout'
             }
         }
